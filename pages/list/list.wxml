@@ -1,0 +1,16 @@
+
+<view class='con' wx:if="{{show}}">
+      <scroll-view scroll-y
+      bindscrolltoupper = "upper"
+      >
+      <view wx:for="{{mv.subjects}}" wx:key="{{item.id}}" bindtap='showInfo' data-id="{{item.id}}" class='nav_con'>
+        <image src="{{item.images.large}}" class='nav_img'></image>
+            <view class='nav_rigth'>
+              <view class="nav_p1">{{item.title}}</view>
+              <view class="nav_p2">{{item.rating.average}}</view>
+              <view class="nav_p3">{{item.year}}</view>
+              <view class="nav_p4">{{item.genres}}</view>
+            </view>
+      </view>
+      </scroll-view>
+</view>

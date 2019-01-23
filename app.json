@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/home/home",
+    "pages/goods/goods",
+    "pages/my/my",
+    "pages/search/search",
+    "pages/moviedetail/detail",
+    "pages/order/index",
+    "pages/shezhi/shezhi",      
+    "pages/editPersonInfo/editPersonInfo",
+    "pages/personInfo/personInfo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#707070",
+    "selectedColor": "#1296db",
+    "backgroundColor": "#fff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/shouye-off.png",
+        "selectedIconPath": "images/shouye-on.png"
+      },
+      {
+        "pagePath": "pages/list/list",
+        "text": "列表",
+        "iconPath": "images/list-off.png",
+        "selectedIconPath": "images/list-on.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/my-off.png",
+        "selectedIconPath": "images/my-on.png"
+      }
+    ]
+  }
+}

@@ -1,0 +1,60 @@
+<!--pages/my/my.wxml-->
+<!-- 用户图像和昵称--->
+ <view class="header">
+        <image src="{{thumb}}" class="thumb"></image>
+        <text class="nickname">{{nickname}}</text>
+        <text class="about">关于我们</text>
+    </view>
+<!-----收货地址----->
+    <view class="address-box">
+        <view class="address-manage">
+            <navigator url="/pages/personInfo/personInfo">编辑个人资料</navigator>
+        </view>
+    </view>
+  <!--------->
+   <navigator url="/pages/order/index" class='item'>
+    <view class='left'>
+      全部
+    </view>
+    <view class='right'>
+      <text>查看全部视频</text>
+    </view>
+  </navigator>
+  <view class='icon'>
+    <navigator url="/pages/order/index?type=1" hover-class="none" >
+      <image class='fi' src='/images/wd.png' mode="aspectFit"></image>
+      <text>我的收藏</text>
+    </navigator>
+    <navigator url="/pages/order/index?type=2" hover-class="none" >
+      <image src='/images/dyy.png' mode="aspectFit"></image>
+      <text>播放列表</text>
+    </navigator>
+    <navigator url="/pages/order/index?type=3" hover-class="none" >
+      <image src='/images/ls.png' mode="aspectFit"></image>
+      <text>观看历史</text>
+    </navigator>
+    <navigator url="/pages/order/index?type=4" hover-class="none" >
+      <image src='/images/bd.png' mode="aspectFit"></image>
+      <text>本地视频</text>
+    </navigator>
+  </view>
+  <view  class='item'>
+    <view class='left'>
+      我的会员
+    </view>
+  </view>
+  <view  class='item'>
+    <view class='left' bindtap='clearStorage'>
+    清理缓存
+    </view>
+  </view>
+<navigator url="/pages/shezhi/shezhi" class='item'>
+    <view class='left'>
+      设置
+    </view>
+  </navigator>
+   <view  class='item'>
+    <view class='left'>
+   关于
+    </view>
+  </view>

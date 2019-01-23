@@ -1,0 +1,32 @@
+/* pages/list/list.wxss */
+.slide-image{
+    width:375px;
+    height:170px;
+  }
+  
+  .con{
+    flex:1;
+    width:100%;
+    background: #e6e5e5;
+  }
+  
+  .nav_con{
+    width: 90%;
+    height: 110px;
+    margin:20px 5%; 
+    background: #ffffff;
+  }
+  
+  .nav_img{
+    width: 100px;
+    height: 100px;
+    padding-top: 5px;
+    padding-left: 5px;
+  }
+  .nav_rigth{
+    width: 240px;
+    height: 100%;
+    position: relative;
+    left : 120px;
+    top: -100px;
+  }

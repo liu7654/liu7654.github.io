@@ -1,0 +1,43 @@
+<!--pages/home/home.wxml-->
+<!-- <text>pages/home/home.wxml</text> -->
+ <view class="search">
+        <navigator url="../search/search">
+            <view class="search-text">
+                <icon class="weui-icon-search_in-box search-icon" type="search" size="14"></icon>
+                搜 索
+            </view>
+        </navigator>
+    </view>
+<view class='homePage'>
+    <view class='lunbo'>
+         <swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+        <block wx:for="{{imgUrls}}" wx:key="{{index}}">
+            <swiper-item>
+                <image src="{{item}}" class="slide-image" width="100%"/>
+            </swiper-item>
+        </block>
+    </swiper>
+    </view>
+    <view class='content'>
+        <view class='contentHead'>热门推荐</view>
+        <view class='contentCent'>
+            <view wx:for="{{dataList}}" wx:key="index" class='goods'>
+            
+                <image src="{{item.img}}" class='goodsImg'>
+                </image>
+                <view class='goodsName'>
+                    {{item.name}}
+                </view>
+                <view class='goodsBootom'>
+                    <view class='goodsType'>
+                        {{item.type.text}}
+                    </view>
+                    <view>
+                          售价:<text class='price'>￥{{item.price}}</text>
+                    </view>
+                </view>
+               
+            </view>
+        </view>
+    </view>
+</view>

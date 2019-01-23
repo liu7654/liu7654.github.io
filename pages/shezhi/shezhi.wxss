@@ -1,0 +1,29 @@
+/* pages/shezhi/shezhi.wxss */
+.szbox{
+  width: 100%;
+  height: 100%;
+  padding-left:30rpx;
+}
+.item{
+  display: flex;
+  line-height: 40px;
+  border-bottom: 1px solid #dedede;
+  background: #fff;
+  padding: 0 16px;
+}
+.item .left{
+  flex: 1 0 50%;
+  font-size: 14px;
+  color: #333333;
+}
+
+.item .right{
+  flex: 1 0 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.bt{
+  font-size: 30rpx;
+  color: #1d2e33;
+}

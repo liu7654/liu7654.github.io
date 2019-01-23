@@ -1,0 +1,24 @@
+<!--pages/shezhi/shezhi.wxml-->
+<view class='szbox'>
+<view class='top'>系统设置</view>
+  <view class='item'>
+    <view class='left'>
+        允许获取地理位置
+      </view>
+      <view class='right'>
+      <switch checked name="switch" />
+      </view>
+  </view>
+   <view class='item'>
+    <view class='left'>
+        自动缓存
+      </view>
+      <view class='right'>
+      <switch checked name="switch" />
+      </view>
+  </view>
+  <view class='bt'>设置屏幕默认亮度</view>
+  <slider bindchange="slider4change" min="0" max="100" show-value />
+ <view class='bt'>默认音量大小</view>
+  <slider bindchange="slider4change" min="0" max="100" show-value />
+</view>
